@@ -4,7 +4,7 @@ import Stripe from 'stripe';
 // Initialize stripe with a dummy key so the build doesn't fail, 
 // but in production it requires a real secret key
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder', {
-  apiVersion: '2025-02-24.acacia',
+  apiVersion: '2026-03-25.dahlia',
 });
 
 export async function POST(req: Request) {
